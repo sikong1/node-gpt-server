@@ -65,9 +65,9 @@ export default {
     },
     // Options for the API server
     apiOptions: {
-        port: process.env.API_PORT || 3001,
-        host: 'https://node-gpt-server.vercel.app',
-        // host: process.env.API_HOST || 'localhost',
+        port: process.env.API_PORT || 3100,
+        // host: 'https://node-gpt-server.vercel.app',
+        host: process.env.API_HOST || 'localhost',
         // (Optional) Set to true to enable `console.debug()` logging
         debug: false,
         // (Optional) Possible options: "chatgpt", "chatgpt-browser", "bing". (Default: "chatgpt")
