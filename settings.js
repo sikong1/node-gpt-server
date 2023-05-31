@@ -65,7 +65,7 @@ export default {
     },
     // Options for the API server
     apiOptions: {
-        port: process.env.API_PORT || 3100,
+        port: process.env.API_PORT || 8080,
         // host: 'https://node-gpt-server.vercel.app',
         host: process.env.API_HOST || 'localhost',
         // (Optional) Set to true to enable `console.debug()` logging
