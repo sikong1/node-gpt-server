@@ -8,6 +8,6 @@
     { "src": "/.*", "dest": "index.js" }
   ],
   "env": {
-    "PORT": 8000
+    "PORT": "8000"
   }
 }
