@@ -5,7 +5,7 @@
     { "src": "/bin/server.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/.*", "dest": "index.js" }
+    { "src": "/.*", "dest": "indexVercel.js" }
   ],
   "env": {
     "PORT": "8000"
