@@ -16,7 +16,7 @@ let settings;
 if (fs.existsSync(path)) {
     // get the full path
     const fullPath = fs.realpathSync(path);
-    settings = (await import(pathToFileURL(fullPath).toString())).default;
+    settings = (import(pathToFileURL(fullPath).toString())).default;
 } else {
     if (arg) {
         console.error('Error: the file specified by the --settings parameter does not exist.');
