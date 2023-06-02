@@ -16,7 +16,7 @@ let settings;
 if (fs.existsSync(path)) {
     // get the full path
     const fullPath = fs.realpathSync(path);
-    settings = (await import(pathToFileURL(fullPath).toString())).default;
+    settings = ( import(pathToFileURL(fullPath).toString())).default;
 } else {
     if (arg) {
         console.error('Error: the file specified by the --settings parameter does not exist.');
@@ -44,8 +44,8 @@ const perMessageClientOptionsWhitelist = settings.apiOptions?.perMessageClientOp
 
 const server = fastify();
 
-await server.register(FastifySSEPlugin);
-await server.register(cors, {
+ server.register(FastifySSEPlugin);
+ server.register(cors, {
     origin: '*',
 });
 
