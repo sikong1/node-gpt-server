@@ -44,8 +44,8 @@ const perMessageClientOptionsWhitelist = settings.apiOptions?.perMessageClientOp
 
 const server = fastify();
 
-await server.register(FastifySSEPlugin);
-await server.register(cors, {
+ server.register(FastifySSEPlugin);
+ server.register(cors, {
     origin: '*',
 });
 
