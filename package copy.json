@@ -8,7 +8,13 @@
     "chatgpt-cli": "bin/cli.js"
   },
   "scripts": {
-    "test": "npx eslint ."
+    "test": "npx eslint .",
+    "start": "node bin/server.js",
+    "server": "node bin/server.js",
+    "cli": "node bin/cli.js",
+    "build": "node bin/server.js",
+    "dev:debug:server": "nodemon --ignore cache.json --inspect=0.0.0.0:9229 bin/server.js",
+    "dev:debug:cli": "nodemon --ignore cache.json --inspect=0.0.0.0:9228 bin/cli.js"
   },
   "author": "waylaidwanderer",
   "license": "MIT",
