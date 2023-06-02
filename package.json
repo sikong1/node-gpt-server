@@ -2,7 +2,7 @@
   "name": "@waylaidwanderer/chatgpt-api",
   "version": "1.36.2",
   "description": "A ChatGPT implementation using the official ChatGPT model via OpenAI's API.",
-  "main": "bin/cli.js",
+  "main": "bin/server.js",
   "bin": {
     "chatgpt-api": "bin/server.js",
     "chatgpt-cli": "bin/cli.js"
