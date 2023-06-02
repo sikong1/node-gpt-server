@@ -2,8 +2,11 @@
     "version": 2,
     "builds": [
       {
-        "src": "bin/server.js",
-        "use": "@vercel/node"
+        "src": "/bin/server.js",
+        "use": "@vercel/node@1.11.0",
+        "config": {
+          "node_version": "14.x"
+        }
       }
     ]
   }
