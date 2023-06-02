@@ -158,7 +158,7 @@ server.post('/conversation', async (request, reply) => {
 });
 
 server.listen({
-    port: 3001,
+    port: 3008,
     host: settings.apiOptions?.host || 'localhost',
 }, (error) => {
     if (error) {
