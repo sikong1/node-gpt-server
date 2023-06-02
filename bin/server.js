@@ -50,6 +50,7 @@ const server = fastify();
 });
 
 server.get('/ping', () => Date.now().toString());
+server.get('/', () => Date.now().toString());
 
 server.post('/conversation', async (request, reply) => {
     const body = request.body || {};
